@@ -1,0 +1,26 @@
+.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, white, lightgray);
+    font-family: "Sansita Swashed", cursive;
+
+     
+}
+
+.text{
+     color: #7c795d;
+        font-family: 'Trocchi', serif; 
+        font-size: 30px; font-weight: normal; 
+        line-height: 48px; 
+        margin: 0; 
+       text-align: center;
+}
+
+
+
+
