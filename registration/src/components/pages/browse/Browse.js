@@ -1,9 +1,10 @@
 import React from 'react'
+import Header from '../../header/Header'
 
 export default function Browse() {
     return (
         <div>
-            Страница для незарегистрированных пользователей
+            Здесь страница для незареганных пользователей
         </div>
     )
 }

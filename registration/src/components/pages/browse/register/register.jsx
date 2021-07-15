@@ -1,8 +1,8 @@
 
 import { useRef } from 'react';
 import { useHistory } from 'react-router';
-import authService from '../../../services/auth.service';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 export default function Register() {
     const email = useRef();
     const username = useRef();
@@ -23,7 +23,7 @@ export default function Register() {
 
             }
             try {
-               authService.register(user)
+               await axios.post("http://localhost:8080/auth/signup",user)
                history.push('/success')
             } catch (error) {
                 console.log(error);
@@ -34,9 +34,7 @@ export default function Register() {
         <div className="login">
             <div className="loginWrapper">
                 <div className="loginLeft">
-                    <span className="loginDesc">
-                        
-                    </span>
+    
                 </div>
                 <div className="loginRight">
                     <form className="loginBox" onSubmit={handleClick}>
